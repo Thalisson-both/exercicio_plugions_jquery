@@ -82,6 +82,16 @@ $(document).ready(function() {
         return parseInt(cpf.charAt(10)) === digit2;
         return true;
     }
+
+    $('form').submit(function(e){
+        
+        if ($('form').valid()) {
+            alert('Olá, vamos proseguir para sua nova aventura!');
+        } else {
+            e.preventDefault();
+        }
+
+    })
 });
 
 
